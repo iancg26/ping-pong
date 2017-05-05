@@ -8,7 +8,6 @@ var pingpong = function(n){
   else if (i % 5 === 0){
     pongGame.push("Pong");
   }
-
   else if (i % 15 === 0){
     pongGame.push("Ping Pong");
   }
@@ -17,16 +16,13 @@ var pingpong = function(n){
   }
   }
 };
-
-
-
-
 // front end logic
 $(document).ready(function() {
   $("form#Ping-pong").submit(function(event){
-
-
-
+    var n = $("input#userInput").val();
+    pingpong(n);
+    $("#result").show();
+    $("#resultNumber").append(pongGame.join(' '));
 
   $("#statement").show();
   event.preventDefault();
