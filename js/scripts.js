@@ -2,14 +2,14 @@
 var pongGame = [];
 var pingpong = function(n){
   for (var i = 1; i <= n; i++){
-  if (i % 3 === 0){
-    pongGame.push("Ping");
+  if (i % 15 === 0){
+    pongGame.push("Ping-Pong");
   }
   else if (i % 5 === 0){
     pongGame.push("Pong");
   }
-  else if (i % 15 === 0){
-    pongGame.push("Ping-Pong");
+  else if (i % 3 === 0){
+    pongGame.push("Ping");
   }
   else{
     pongGame.push('' + i + '');
