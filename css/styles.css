@@ -1,0 +1,29 @@
+h1,
+h2,
+p,
+li,
+span,
+button
+{
+  color: darkgreen;
+}
+h1{
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 40px;
+}
+body{
+  background-image: url("../img/pingbackground.png");
+}
+p{
+  font-size: 15px;
+}
+li{
+  font-weight: bolder;
+}
+.container{
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 15px;
+}
+.btn{
+  border: 5px solid darkgreen;
+}
