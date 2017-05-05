@@ -1,7 +1,7 @@
 // backend logic
 var pongGame = [];
 var pingpong = function(n){
-  for (var i = 0; i <= n; i++){
+  for (var i = 1; i <= n; i++){
   if (i % 3 === 0){
     pongGame.push("Ping");
   }
@@ -9,7 +9,7 @@ var pingpong = function(n){
     pongGame.push("Pong");
   }
   else if (i % 15 === 0){
-    pongGame.push("Ping Pong");
+    pongGame.push("Ping-Pong");
   }
   else{
     pongGame.push('' + i + '');
@@ -27,5 +27,5 @@ $(document).ready(function() {
   $("#statement").show();
   event.preventDefault();
 
-};
-};
+});
+});
